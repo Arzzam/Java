@@ -28,8 +28,24 @@ public class Car {
     }
 
 //    Set Method
-    public String setMake (String make){
+    public void setMake (String make){
         this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+    public void setConvertible(boolean convertible) {
+        this.convertible = convertible;
     }
 
 
