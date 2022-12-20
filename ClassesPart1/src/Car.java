@@ -6,7 +6,6 @@ public class Car {
     private int doors = 2;
     private boolean convertible = true;
 
-//    Get Method
     public String getMake() {
         return make;
     }
@@ -27,9 +26,16 @@ public class Car {
         return convertible;
     }
 
-//    Set Method
-    public void setMake (String make){
-        this.make = make;
+    public void setMake(String make) {
+
+        if (make == null) make = "Unknown";
+        String lowercaseMake = make.toLowerCase();
+        switch (lowercaseMake) {
+            case "holden", "porsche", "tesla" -> this.make = make;
+            default -> {
+                this.make = "Unsupported ";
+            }
+        }
     }
 
     public void setModel(String model) {
@@ -47,7 +53,6 @@ public class Car {
     public void setConvertible(boolean convertible) {
         this.convertible = convertible;
     }
-
 
     public void describeCar() {
 
