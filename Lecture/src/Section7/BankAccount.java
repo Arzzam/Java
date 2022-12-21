@@ -7,6 +7,21 @@ public class BankAccount {
     private String cusEmail;
     private long cusPhone;
 
+    //    Default Constructor
+    public BankAccount() {
+        System.out.println("Empty constructor initialized");
+    }
+
+    //    Set data using Constructor
+    public BankAccount(String cusName, long accNo, int accBal, long phoneNo, String email) {
+        System.out.println("Account Created");
+        this.cusName = cusName;
+        this.accNo = accNo;
+        this.accBal = accBal;
+        cusEmail = email;
+        cusPhone = phoneNo;
+    }
+
     //    Getter for Bank Account
     public long getAccNo() {
         return accNo;
@@ -58,9 +73,9 @@ public class BankAccount {
 
     //    WITHDRAW METHOD
     public void withdraw(int withdrawAmount) {
-        if (accBal - withdrawAmount < 0 ){
+        if (accBal - withdrawAmount < 0) {
             System.out.println("Sorry, Could be processed due to Insufficient Balance");
-        }else {
+        } else {
             accBal -= withdrawAmount;
             System.out.println("Successfully Withdrawn");
             System.out.println("Your balance is: " + accBal);
