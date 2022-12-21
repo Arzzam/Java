@@ -9,6 +9,8 @@ public class BankAccount {
 
     //    Default Constructor
     public BankAccount() {
+        //  Using Constructor Chaining
+        this("DefaultName", 123456789L, 0, 987654321L, "defaultname@gmail.com");
         System.out.println("Empty constructor initialized");
     }
 
@@ -22,25 +24,17 @@ public class BankAccount {
         cusPhone = phoneNo;
     }
 
+//    Using 3 field in Constructor
+    public BankAccount(String cusName, String cusEmail, long cusPhone) {
+        this(cusName, 99999L, 10000, cusPhone, cusEmail);
+//        this.cusName = cusName;
+//        this.cusEmail = cusEmail;
+//        this.cusPhone = cusPhone;
+    }
+
     //    Getter for Bank Account
     public long getAccNo() {
         return accNo;
-    }
-
-    public int getAccBal() {
-        return accBal;
-    }
-
-    public String getCusName() {
-        return cusName;
-    }
-
-    public String getCusEmail() {
-        return cusEmail;
-    }
-
-    public long getCusPhone() {
-        return cusPhone;
     }
 
     //    Setter for Bank Account
@@ -48,16 +42,32 @@ public class BankAccount {
         this.accNo = accNo;
     }
 
+    public int getAccBal() {
+        return accBal;
+    }
+
     public void setAccBal(int accBal) {
         this.accBal = accBal;
+    }
+
+    public String getCusName() {
+        return cusName;
     }
 
     public void setCusName(String cusName) {
         this.cusName = cusName;
     }
 
+    public String getCusEmail() {
+        return cusEmail;
+    }
+
     public void setCusEmail(String cusEmail) {
         this.cusEmail = cusEmail;
+    }
+
+    public long getCusPhone() {
+        return cusPhone;
     }
 
     public void setCusPhone(long cusPhone) {
