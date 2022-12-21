@@ -1,4 +1,6 @@
-package Section7;
+package Section7.Challenge1;
+
+import Section7.Challenge1.BankAccount;
 
 public class Main {
     public static void main(String[] args) {

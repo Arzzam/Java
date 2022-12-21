@@ -1,4 +1,4 @@
-package Section7;
+package Section7.Challenge1;
 
 public class BankAccount {
     private long accNo;
