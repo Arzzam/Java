@@ -6,7 +6,9 @@ public class Main {
         Customer cus = new Customer();
         Customer cus1 = new Customer("Nafil", 76318452L, "arzzam19@gmail.com");
         Customer cus2 = new Customer("Arzzam", "nafilarzzam19@gmail.com");
-
+        System.out.println(cus.getCusName());
+        System.out.println(cus.getCreditLimit());
+        System.out.println(cus.getEmail());
         System.out.println(cus2.getCusName());
         System.out.println(cus2.getCreditLimit());
         System.out.println(cus2.getEmail());

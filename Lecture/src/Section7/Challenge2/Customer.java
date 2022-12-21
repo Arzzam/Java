@@ -18,10 +18,10 @@ public class Customer {
     }
 
     public Customer(){
-        System.out.println("Empty Fields");
+        this("Unknown" , "unknown@gmail,com");
     }
     public Customer(String name, long creditLimit, String email) {
-        System.out.println("Fields created");
+//        System.out.println("Fields created");
         this.name = name;
         this.creditLimit = creditLimit;
         this.email = email;
