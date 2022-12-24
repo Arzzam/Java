@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ClassesPart1/ClassesPart1.iml" filepath="$PROJECT_DIR$/ClassesPart1/ClassesPart1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1_Classes/1_Classes.iml" filepath="$PROJECT_DIR$/1_Classes/1_Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_RecordProject/2_RecordProject.iml" filepath="$PROJECT_DIR$/2_RecordProject/2_RecordProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_Inheritance/3_Inheritance.iml" filepath="$PROJECT_DIR$/3_Inheritance/3_Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lecture/Lecture.iml" filepath="$PROJECT_DIR$/Lecture/Lecture.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecordProject/RecordProject.iml" filepath="$PROJECT_DIR$/RecordProject/RecordProject.iml" />
     </modules>
   </component>
 </project>
