@@ -29,6 +29,8 @@ public class Dog extends Animal {
 
     }
 
+//    This method is overriding the Parent class method and it can have more specific methods over
+//    parent class by using the same name of the methods
     @Override
     public void move(String speed) {
         super.move(speed);
