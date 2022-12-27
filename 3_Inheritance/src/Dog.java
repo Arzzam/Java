@@ -26,7 +26,8 @@ public class Dog extends Animal {
     }
 
     public void makeNoise() {
-
+        bark();
+        System.out.println();
     }
 
 //    This method is overriding the Parent class method and it can have more specific methods over
